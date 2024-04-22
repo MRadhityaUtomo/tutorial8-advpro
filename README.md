@@ -14,3 +14,7 @@ The total number of queues are 51, peaking at a about 60 total queues. This is c
 
 <br>
 
+Running at least three subscribers
+![alt text](<Screenshots/multisubscriber.jpg>)
+![alt text](<Screenshots/multiplesubschart.jpg>)
+As seen above, the big red spike is subsiding faster after it's initial peak. In addition the amount of total queues also decreased faster. By adding more subscribers the amount of time processing the message is divided and done parallel to each individual console. This also takes a page out of concurrency where we added more "machines" to process a large request. So by increasing the subscriber count running at the same time will have a positive impact on the running time of queues via faster processing and better work distribution.  
